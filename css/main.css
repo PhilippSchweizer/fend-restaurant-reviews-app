@@ -1,0 +1,186 @@
+/* CSS Document */
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans');
+html {}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+body, td, th, p {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.2;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  background-color: #fdfdfd;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/* =================== Header/Navigation =================== */
+
+header {
+  grid-area: header;
+}
+
+nav {
+  width: 100vw;
+  height: 10vw;
+  background-color: #252831;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav h1 a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#breadcrumb {
+  display: none;
+}
+
+/* ========================== Main ========================== */
+
+#maincontent {
+  display: grid;
+  grid-area: main;
+  grid-template-areas: "map" "filter" "restaurants";
+  background-color: #f3f3f3;
+}
+
+/* ========================== Map =========================== */
+
+#map-container {
+  grid-area: map;
+}
+
+#map {
+  height: 200px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+/* ================== Restaurant Filtering ================== */
+
+.filter-options {
+  width: 100%;
+  padding: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  background-color: #3397DB;
+}
+
+.filter-options h2 {
+  margin: 0 0 0.2em;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  line-height: 1;
+}
+
+.filter-options select {
+  background-color: white;
+  border: 1px solid #fff;
+  font-size: 0.9em;
+}
+
+.filter-options select:last-child {
+  margin-left: 1em;
+}
+
+/* ==================== Restaurants List ==================== */
+
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  color: #f18100;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #3397db;
+  text-decoration: none;
+}
+
+a img {
+  border: none 0px #fff;
+}
+
+#restaurants-list {
+  background-color: #f3f3f3;
+  list-style: outside none none;
+  margin: 0;
+  /* padding: 30px 15px 60px; */
+  text-align: center;
+}
+
+#restaurants-list li {
+  background-color: #fff;
+  padding: 0.8em 30px 25px;
+  text-align: left;
+}
+
+#restaurants-list .restaurant-img {
+  background-color: #ccc;
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  /*   min-height: 248px;
+  min-width: 100%; */
+}
+
+#restaurants-list li h1 {
+  color: #f18100;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#restaurants-list p {
+  margin: 0;
+}
+
+#restaurants-list li a {
+  background-color: #f18100;
+  box-shadow: 5px 5px 5px #f18100c2;
+  color: #fff;
+  display: inline-block;
+  margin: 15px auto;
+  padding: 8px 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+#footer {
+  grid-area: footer;
+  background-color: #444;
+  color: #aaa;
+  font-size: 0.7em;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}

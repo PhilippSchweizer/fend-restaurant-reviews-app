@@ -1,0 +1,72 @@
+/* ====================== Restaurant Details ====================== */
+
+#maincontent {
+  display: grid;
+  grid-area: main;
+  grid-template-areas: "restaurants" "map";
+  background-color: rgb(245, 245, 245);
+}
+
+#restaurant-container, #reviews-container {
+  padding: 1em 25px;
+}
+
+#restaurant-img {
+  width: 100%;
+}
+
+#restaurant-cuisine {
+  background-color: #333;
+  color: #ddd;
+  letter-spacing: 10px;
+  margin: 0 0 20px;
+  padding: 2px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#restaurant-address {
+  margin: 10px 0px;
+}
+
+#restaurant-hours td {
+  color: #666;
+}
+
+#restaurant-name, #reviews-container h1 {
+  color: #f18200;
+  font-size: 1.3em;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+#reviews-container h1 {
+  border-bottom: 1px solid #f18200;
+}
+
+#reviews-list {
+  margin: 0;
+  padding: 0;
+}
+
+#reviews-list li {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 0 30px;
+  overflow: hidden;
+  padding: 20px 20px;
+  position: relative;
+  width: 85%;
+}
+
+#reviews-list li p {
+  margin: 0 0 10px;
+  flex: 1 1 auto;
+}
+
+#reviews-list li p:nth-child(2) {
+  text-align: right;
+}

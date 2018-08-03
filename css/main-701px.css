@@ -1,0 +1,45 @@
+/* ====================== Media Queries ====================== */
+
+/* @media (max-width: 700px) {
+    body {
+      font-size: 10px;
+    }
+  } */
+
+  @media (min-width: 701px) {
+    nav {
+      height: 5vw;
+    }
+    #map {
+      height: 400px;
+      width: 100%;
+      background-color: #ccc;
+    }
+    #breadcrumb {
+      padding: 0;
+      list-style: none;
+      background-color: #eee;
+      margin: 0 auto;
+      width: calc(50% - 80px);
+    }
+    /* Display list items side by side */
+    #breadcrumb li {
+      display: inline;
+    }
+    /* Add a slash symbol (/) before/behind each list item */
+    #breadcrumb li+li:before {
+      padding: 8px;
+      color: black;
+      content: "/\00a0";
+    }
+    /* Add a color to all links inside the list */
+    #breadcrumb li a {
+      color: #0275d8;
+      text-decoration: none;
+    }
+    /* Add a color on mouse-over */
+    #breadcrumb li a:hover {
+      color: #01447e;
+      text-decoration: underline;
+    }
+  }
