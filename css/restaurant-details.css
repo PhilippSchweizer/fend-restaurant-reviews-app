@@ -3,12 +3,16 @@
 #maincontent {
   display: grid;
   grid-area: main;
-  grid-template-areas: "restaurants" "map";
+  grid-template-areas: "restaurant" "map";
   background-color: rgb(245, 245, 245);
 }
 
 #restaurant-container, #reviews-container {
   padding: 1em 25px;
+}
+
+#restaurant-container {
+  grid-area: restaurant;
 }
 
 #restaurant-img {
@@ -34,14 +38,14 @@
 }
 
 #restaurant-name, #reviews-container h1 {
-  color: #f18200;
+  color: #FF9800;
   font-size: 1.3em;
   margin: 15px 0;
   text-transform: uppercase;
 }
 
 #reviews-container h1 {
-  border-bottom: 1px solid #f18200;
+  border-bottom: 1px solid #FF9800;
 }
 
 #reviews-list {
@@ -63,10 +67,10 @@
 }
 
 #reviews-list li p {
-  margin: 0 0 10px;
+  margin: 0 5px 10px 0;
   flex: 1 1 auto;
 }
 
-#reviews-list li p:nth-child(2) {
+/* #reviews-list li p:nth-child(2) {
   text-align: right;
-}
+} */
