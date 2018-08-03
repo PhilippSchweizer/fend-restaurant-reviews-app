@@ -1,45 +1,65 @@
 /* ====================== Media Queries ====================== */
 
-/* @media (max-width: 700px) {
-    body {
-      font-size: 10px;
-    }
-  } */
-
-  @media (min-width: 701px) {
-    nav {
-      height: 5vw;
-    }
-    #map {
-      height: 400px;
-      width: 100%;
-      background-color: #ccc;
-    }
-    #breadcrumb {
-      padding: 0;
-      list-style: none;
-      background-color: #eee;
-      margin: 0 auto;
-      width: calc(50% - 80px);
-    }
-    /* Display list items side by side */
-    #breadcrumb li {
-      display: inline;
-    }
-    /* Add a slash symbol (/) before/behind each list item */
-    #breadcrumb li+li:before {
-      padding: 8px;
-      color: black;
-      content: "/\00a0";
-    }
-    /* Add a color to all links inside the list */
-    #breadcrumb li a {
-      color: #0275d8;
-      text-decoration: none;
-    }
-    /* Add a color on mouse-over */
-    #breadcrumb li a:hover {
-      color: #01447e;
-      text-decoration: underline;
-    }
+@media (min-width: 701px) {
+  nav {
+    height: 5vw;
   }
+  nav:last-child {
+    justify-content: left;
+  }
+  #breadcrumb {
+    display: block;
+    padding: 0;
+    list-style: none;
+    margin: 0 30px;
+    width: calc(50% - 80px);
+  }
+  
+  #map {
+    height: 25vw;
+    width: 100%;
+    background-color: #ccc;
+  }
+  .filter-options {
+    justify-content: space-between;
+    padding: 0.4em;
+  }
+
+  .filter-options h2 {
+    width: 30%;
+    margin: 0;
+  }
+
+  /* Prevent select from overflowing parent wrapper */
+  .filter-options::after {
+    content: "";
+    margin-right: -70px;
+  }
+
+  #restaurants-list li {
+    width: 40%;
+  }
+  
+  /* Display list items side by side */
+  #breadcrumb li {
+    display: inline;
+    color: #FF9800;
+  }
+  /* Add a slash symbol (/) before/behind each list item */
+  #breadcrumb li+li::before {
+    padding: 8px;
+    color: #FF9800;
+    content: "/\00a0";
+  }
+  /* Add a color to all links inside the list */
+  #breadcrumb li a {
+    color: #8dcaff;
+    text-decoration: none;
+  }
+  /* Add a color on mouse-over and tab focus */
+  #breadcrumb li a:focus,
+  #breadcrumb li a:hover, {
+    color: #FF9800; 
+    text-decoration: underline;
+  }
+}
