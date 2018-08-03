@@ -1,4 +1,32 @@
 @media (min-width: 701px) {
+	#breadcrumb {
+    display: block;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+	}
+	/* Display list items side by side */
+  #breadcrumb li {
+    display: inline;
+    color: #FF9800;
+  }
+  /* Add a slash symbol (/) before/behind each list item */
+  #breadcrumb li+li::before {
+    padding: 8px;
+    color: #FF9800;
+    content: "/\00a0";
+  }
+  /* Add a color to all links inside the list */
+  #breadcrumb li a {
+    color: #8dcaff;
+    text-decoration: none;
+  }
+  /* Add a color on mouse-over and tab focus */
+  #breadcrumb li a:focus,
+  #breadcrumb li a:hover, {
+    color: #FF9800; 
+    text-decoration: underline;
+  }
 	#maincontent {
 		grid-template-areas: "restaurant map";
 		background-color: rgb(245, 245, 245);
