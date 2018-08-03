@@ -81,7 +81,7 @@ nav h1 a {
 
 .filter-options {
   width: 100%;
-  padding: 0.3em;
+  padding: 0.3em 0 0.3em 0.3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -113,6 +113,16 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #f3f3f3;
+  list-style: outside none none;
+  margin: 0;
+}
+
+#restaurants-list .restaurant-img {
+  background-color: #f3f3f3;
+  display: block;
+  margin: 0;
+  max-width: 100%;
 }
 
 a {
@@ -129,13 +139,6 @@ a img {
   border: none 0px #fff;
 }
 
-#restaurants-list {
-  background-color: #f3f3f3;
-  list-style: outside none none;
-  margin: 0;
-  /* padding: 30px 15px 60px; */
-  text-align: center;
-}
 
 #restaurants-list li {
   background-color: #fff;
@@ -143,14 +146,6 @@ a img {
   text-align: left;
 }
 
-#restaurants-list .restaurant-img {
-  background-color: #ccc;
-  display: block;
-  margin: 0;
-  max-width: 100%;
-  /*   min-height: 248px;
-  min-width: 100%; */
-}
 
 #restaurants-list li h1 {
   color: #f18100;
