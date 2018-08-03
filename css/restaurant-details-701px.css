@@ -1,0 +1,15 @@
+@media (min-width: 701px) {
+	#maincontent {
+		grid-template-areas: "restaurant map";
+		background-color: rgb(245, 245, 245);
+	}
+	#restaurant-container {
+		width: 40%;
+	}
+	#map-container{
+		width: 50%;
+	}
+	#map{
+		position: absolute;
+	}
+}
