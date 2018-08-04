@@ -39,7 +39,10 @@
 	}
 	#restaurant-container, #reviews-container, footer {
 		width: 45%;
-	}
+  }
+  #restaurant-container {
+    margin: 50px 0 0;
+  }
   #map-container {
     background: blue none repeat scroll 0 0;
     height: 87%;
