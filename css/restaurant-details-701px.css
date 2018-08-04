@@ -28,16 +28,26 @@
     text-decoration: underline;
   }
 	#maincontent {
-		grid-template-areas: "restaurant map";
+		grid-template-areas: "restaurant map" "reviews map" "footer map";
 		background-color: rgb(245, 245, 245);
 	}
-	#restaurant-container {
+	#restaurant-container, #reviews-container, footer {
 		width: 40%;
 	}
-	#map-container{
-		width: 50%;
-	}
-	#map{
-		position: absolute;
-	}
+  #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 87%;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 50%;
+  }
+  #map {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+  }
+  #reviews-container {
+    grid-area: reviews;
+  }
 }
