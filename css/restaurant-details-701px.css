@@ -1,4 +1,10 @@
 @media (min-width: 701px) {
+  .inside header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 	#breadcrumb {
     display: block;
     padding: 0;
@@ -32,7 +38,7 @@
 		background-color: rgb(245, 245, 245);
 	}
 	#restaurant-container, #reviews-container, footer {
-		width: 40%;
+		width: 45%;
 	}
   #map-container {
     background: blue none repeat scroll 0 0;
