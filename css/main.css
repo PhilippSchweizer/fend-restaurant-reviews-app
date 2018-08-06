@@ -28,6 +28,12 @@ body {
 :focus {
   outline: solid #FF9800;
 }
+
+a:hover, a:focus, a:active {
+  color: #3397db;
+  text-decoration: none;
+}
+
 /* =================== Header/Navigation =================== */
 
 header {
@@ -61,6 +67,7 @@ nav h1 a {
 }
 
 /* ======================= Skip Link ======================== */
+
 .skip-link {
   position: absolute;
   top: -40px;
@@ -120,6 +127,12 @@ nav h1 a {
   font-size: 0.9em;
 }
 
+.filter-options select:focus {
+  outline: none;
+  background-color: #FF9800;
+  color: #fff;
+}
+
 .filter-options select:last-child {
   margin-left: 1em;
 }
@@ -147,15 +160,9 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus, a:active {
-  color: #3397db;
-  text-decoration: none;
-}
-
 a img {
   border: none 0px #fff;
 }
-
 
 #restaurants-list li {
   background-color: #fff;
@@ -163,10 +170,9 @@ a img {
   text-align: left;
 }
 
-
 #restaurants-list li h1 {
   color: #FF9800;
-  font-size: 1.2em; 
+  font-size: 1.2em;
   text-transform: uppercase;
 }
 
@@ -185,7 +191,6 @@ a img {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 #footer {
   grid-area: footer;
