@@ -14,7 +14,7 @@
     background-color: #ccc;
   }
   .filter-options {
-    justify-content: space-between;
+    flex-direction: row;
     padding: 0.4em;
   }
 
