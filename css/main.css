@@ -194,6 +194,11 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+#restaurants-list li a:focus {
+  background-color: #3397db;
+  box-shadow: 5px 5px 5px #3398dbe1;
+}
+
 #footer {
   grid-area: footer;
   background-color: #444;
