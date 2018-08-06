@@ -25,6 +25,9 @@ body {
   grid-template-areas: "header" "main" "footer";
 }
 
+:focus {
+  outline: solid #FF9800;
+}
 /* =================== Header/Navigation =================== */
 
 header {
