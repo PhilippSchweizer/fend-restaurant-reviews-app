@@ -57,6 +57,18 @@ nav h1 a {
   display: none;
 }
 
+/* ======================= Skip Link ======================== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #FF9800;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* ========================== Main ========================== */
 
 #maincontent {
